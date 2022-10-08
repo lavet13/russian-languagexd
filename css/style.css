@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.white-border {
+  position: absolute;
+  background: #fff;
+}
+.white-border--1 {
+  border-radius: 0% 100% 81% 19%/100% 100% 0% 0%;
+  width: 35rem;
+  height: 20rem;
+  bottom: 0;
+  left: 0;
+}
+.white-border--2 {
+  border-radius: 46% 54% 51% 49%/100% 100% 0% 0%;
+  width: 42rem;
+  height: 15rem;
+  bottom: 0;
+  left: 30rem;
+}
+.white-border--3 {
+  border-radius: 57% 43% 51% 49%/100% 100% 0% 0%;
+  width: 35rem;
+  height: 18rem;
+  bottom: 0;
+  left: 65rem;
+}
+.white-border--4 {
+  border-radius: 50% 50% 51% 49%/100% 100% 0% 0%;
+  width: 45rem;
+  height: 18rem;
+  bottom: 0;
+  left: 98rem;
+}
+
+.header {
+  position: relative;
+  background: linear-gradient(91.25deg, #bf2ed1 0.92%, #985ce4 51.04%, #6e8bf8 99.92%);
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
