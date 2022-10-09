@@ -7,9 +7,12 @@
 @import 'base/utilities';
 
 // COMPONENTS
-@import 'components/white-border';
+@import 'components/lines';
+@import 'components/nav';
+@import 'components/shapes';
 
 // LAYOUT
 @import 'layout/header';
+@import 'layout/container';
 
 @import 'pages/home';
