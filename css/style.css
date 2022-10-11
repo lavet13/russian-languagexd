@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .lines {
@@ -29,25 +35,101 @@ html {
 }
 
 .nav {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 3rem;
 }
 .nav__profile {
   display: grid;
   grid-template-columns: min-content max-content;
+  align-items: start;
+  grid-auto-rows: min-content;
+  column-gap: 1rem;
+  color: #fff;
 }
 .nav__profile-img {
-  grid-row: 1/span 1;
+  grid-row: 1/span 2;
   display: block;
   width: 3.6rem;
   height: 3.6rem;
   background: linear-gradient(to top, #e967cc, #b467e9);
+  border-radius: 50%;
 }
+.nav__profile-main-text {
+  align-self: end;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.nav__profile-main-subtext {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.nav__list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.nav__list-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) all 0.2s;
+}
+.nav__list-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav__list-link:not(:last-child) {
+  margin-right: 1rem;
+}
+.nav__buttons {
+  display: flex;
+}
+.nav__buttons-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) all 0.2s;
+}
+.nav__buttons-btn:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav__buttons-btn--1 {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 4rem;
+}
+.nav__buttons-btn--1:hover {
+  color: #434343;
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
+}
+.nav__buttons-btn--2 {
+  color: #434343;
+  background: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+.nav__buttons-btn--2:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
+}
+
 .shapes {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
 }
 .shapes__img {
   display: block;
@@ -69,7 +151,7 @@ html {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 

@@ -1,14 +1,23 @@
 .nav {
+    position: relative;
+    z-index: 1;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    padding-top: 3rem;
+
     &__profile {
         display: grid;
         grid-template-columns: min-content max-content;
+        align-items: start;
+        grid-auto-rows: min-content;
+        column-gap: 1rem;
+        color: $color-white;
 
         &-img {
-            grid-row: 1 / span 1;
+            grid-row: 1 / span 2;
 
             display: block;
             width: 3.6rem;
@@ -18,20 +27,90 @@
                 $color-gradient-5,
                 $color-gradient-4
             );
+            border-radius: 50%;
         }
 
         &-main {
             &-text {
+                align-self: end;
+                font-size: 1.6rem;
+                font-weight: 700;
             }
 
             &-subtext {
+                font-size: 1.2rem;
+                font-weight: 300;
             }
         }
     }
 
     &__list {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        &-link {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-white;
+            padding: 0.8rem 1.6rem;
+            border-radius: 8px;
+            font-size: 1.6rem;
+            font-weight: 300;
+
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1) all 0.2s;
+
+            &:hover {
+                background: rgba($color-white, 0.2);
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
     }
 
     &__buttons {
+        display: flex;
+
+        &-btn {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1) all 0.2s;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            &--1 {
+                color: $color-white;
+                border: 1px solid $color-white;
+                padding: 1rem 4rem;
+
+                &:hover {
+                    color: $color-black;
+                    background: $color-white;
+                    box-shadow: 0 1rem 2rem rgba($color-white, 0.15);
+                }
+            }
+
+            &--2 {
+                color: $color-black;
+                background: $color-gray-1;
+                border: 1px solid $color-gray-1;
+
+                &:hover {
+                    color: $color-black-2;
+                    background: $color-white;
+                    border: 1px solid $color-white;
+                    box-shadow: 0 1rem 2rem rgba($color-white, 0.15);
+                }
+            }
+        }
     }
 }
