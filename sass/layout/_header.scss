@@ -9,4 +9,11 @@
     );
 
     min-height: 100vh;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
 }

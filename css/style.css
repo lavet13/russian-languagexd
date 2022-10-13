@@ -20,6 +20,44 @@ body {
   font-weight: 400;
 }
 
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #434343;
+}
+
+.mb-hg {
+  margin-bottom: 10rem !important;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero__content {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 1.5rem;
+}
+.hero__img {
+  display: block;
+  object-fit: contain;
+}
+
 .lines {
   position: absolute;
   top: 0;
@@ -147,6 +185,12 @@ body {
 .header {
   position: relative;
   background: linear-gradient(91.25deg, #bf2ed1 0.92%, #985ce4 51.04%, #6e8bf8 99.92%);
+  min-height: 100vh;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
 
