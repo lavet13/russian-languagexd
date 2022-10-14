@@ -54,7 +54,7 @@
             text-decoration: none;
             color: $color-white;
             padding: 0.8rem 1.6rem;
-            border-radius: 8px;
+            border-radius: $border-radius-1;
             font-size: 1.6rem;
             font-weight: 300;
 
@@ -79,7 +79,7 @@
             font-size: 1.6rem;
             font-weight: 500;
             padding: 1rem 2rem;
-            border-radius: 8px;
+            border-radius: $border-radius-1;
 
             transition: cubic-bezier(0.39, 0.575, 0.565, 1) all 0.2s;
 

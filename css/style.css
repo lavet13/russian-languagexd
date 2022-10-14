@@ -38,8 +38,36 @@ body {
   color: #434343;
 }
 
+.mb-sm {
+  margin-bottom: 2rem !important;
+}
+
 .mb-hg {
   margin-bottom: 10rem !important;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: #ff00d6;
+  border-radius: 8px;
+  padding: 2rem 7rem;
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.btn:hover {
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.35);
+  color: #ff00d6;
+}
+.btn:active {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.35);
 }
 
 .hero {
@@ -51,7 +79,7 @@ body {
 .hero__content {
   display: grid;
   grid-auto-rows: min-content;
-  row-gap: 1.5rem;
+  row-gap: 3rem;
 }
 .hero__img {
   display: block;

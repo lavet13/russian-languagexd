@@ -1,2 +1,28 @@
 .btn {
+    display: inline-block;
+    border: none;
+    background-color: $color-pink;
+    border-radius: $border-radius-1;
+    padding: 2rem 7rem;
+
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $color-white;
+
+    cursor: pointer;
+
+    transition: 0.4s all;
+
+    &:hover {
+        background-color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-white, 0.35);
+        color: $color-pink;
+    }
+
+    &:active {
+        background-color: rgba($color-white, 0.9);
+        transform: translateY(1px);
+        box-shadow: 0 0.5rem 1.5rem rgba($color-white, 0.35);
+    }
 }
