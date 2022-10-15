@@ -2,17 +2,63 @@
     position: relative;
     z-index: 1;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 3rem;
+    max-width: 95%;
 
     &__content {
+        position: relative;
+
         display: grid;
         grid-auto-rows: min-content;
         row-gap: 3rem;
+
+        &:after {
+            content: '3-7 лет';
+            position: absolute;
+            top: 12.5rem;
+            right: 7rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 12.7rem;
+            height: 5.2rem;
+            color: $color-white;
+            background: $color-purple-2;
+            font-family: inherit;
+            font-size: 2.6rem;
+            font-weight: 700;
+            border-radius: $border-radius-2;
+
+            transform: rotate(-15deg);
+        }
     }
 
     &__img {
         display: block;
         object-fit: contain;
+    }
+
+    &__button {
+        &-box {
+            display: grid;
+            grid-template-columns: min-content auto;
+            column-gap: 1.5rem;
+        }
+
+        &-item {
+            &--1 {
+                grid-row: 1 / span 2;
+            }
+        }
+
+        &-text {
+            &--1 {
+                align-self: end;
+            }
+        }
     }
 }

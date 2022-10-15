@@ -22,6 +22,8 @@
             display: block;
             width: 3.6rem;
             height: 3.6rem;
+            object-fit: contain;
+
             background: linear-gradient(
                 to top,
                 $color-gradient-5,

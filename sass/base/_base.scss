@@ -13,3 +13,11 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 6rem;
+}
