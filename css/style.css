@@ -24,7 +24,7 @@ body {
   row-gap: 6rem;
 }
 
-.heading-primary {
+.heading__primary {
   font-size: 4rem;
   font-weight: 900;
 }
@@ -61,6 +61,10 @@ body {
 
 .mb-sm {
   margin-bottom: 2rem !important;
+}
+
+.mb-md {
+  margin-bottom: 6rem !important;
 }
 
 .mb-hg {
@@ -271,29 +275,44 @@ body {
 .tips__content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 17rem 0 5rem;
 }
 .tips__row {
-  display: flex;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 8.4rem 1fr;
+  grid-template-rows: 8.4rem;
+  column-gap: 2rem;
+  margin-bottom: 5rem;
+}
+.tips__row--2 {
+  margin-bottom: 3rem;
 }
 .tips__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 4rem;
   font-weight: 700;
-  width: 8.4rem;
-  height: 8.4rem;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  margin-right: 2rem;
 }
 .tips__number--blue {
   color: #3477fa;
   background-color: rgba(52, 119, 250, 0.2);
 }
 .tips__number--purple {
-  color: #3477fa;
-  background-color: rgba(52, 119, 250, 0.2);
+  color: #a747fb;
+  background-color: rgba(167, 71, 251, 0.2);
 }
 .tips__number--orange {
-  color: #3477fa;
-  background-color: rgba(52, 119, 250, 0.2);
+  color: #fa624e;
+  background-color: rgba(250, 98, 78, 0.2);
+}
+.tips__paragraph {
+  max-width: 80%;
 }
 
 .container {
