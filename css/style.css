@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   display: grid;
   grid-auto-rows: min-content;
-  row-gap: 6rem;
+  row-gap: 10rem;
 }
 
 .heading__primary {
@@ -29,9 +29,10 @@ body {
   font-weight: 900;
 }
 
-.paragraph {
+.tips__paragraph {
   font-size: 2rem;
   font-weight: 500;
+  line-height: 30px;
 }
 
 .paragraph-regular {
@@ -93,6 +94,11 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   transform: translateY(1px);
   box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.35);
+}
+
+.explanation {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
@@ -276,17 +282,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem 17rem 0 5rem;
+  padding: 2rem 17rem 0 0;
 }
-.tips__row {
+.tips__grid {
   display: grid;
   grid-template-columns: 8.4rem 1fr;
-  grid-template-rows: 8.4rem;
+  align-items: start;
+  justify-items: start;
   column-gap: 2rem;
-  margin-bottom: 5rem;
-}
-.tips__row--2 {
-  margin-bottom: 3rem;
+  row-gap: 3rem;
 }
 .tips__number {
   display: flex;
@@ -294,9 +298,10 @@ body {
   justify-content: center;
   font-size: 4rem;
   font-weight: 700;
-  width: 100%;
-  height: 100%;
+  width: 8.4rem;
+  height: 8.4rem;
   border-radius: 50%;
+  margin-top: 1rem;
   margin-right: 2rem;
 }
 .tips__number--blue {
@@ -319,6 +324,11 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 78.125em) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 
 .header {
   position: relative;
@@ -330,6 +340,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
