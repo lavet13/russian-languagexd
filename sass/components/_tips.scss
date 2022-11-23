@@ -7,6 +7,8 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 2rem 17rem 0 0;
+
+        flex: 0 0 60%;
     }
 
     &__grid {
@@ -49,5 +51,9 @@
 
     &__paragraph {
         max-width: 80%;
+    }
+
+    &__img {
+        flex: 0 0 32%;
     }
 }
