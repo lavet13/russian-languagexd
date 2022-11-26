@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   display: grid;
   grid-auto-rows: min-content;
-  row-gap: 10rem;
+  row-gap: 12rem;
 }
 
 .heading__primary {
@@ -33,6 +33,11 @@ body {
   font-size: 2rem;
   font-weight: 500;
   line-height: 30px;
+}
+
+.children__paragraph {
+  font-size: 2.6rem;
+  font-weight: 700;
 }
 
 .paragraph-regular {
@@ -62,6 +67,10 @@ body {
 
 .color-black-3 {
   color: #535353;
+}
+
+.color-dark-blue-1 {
+  color: #213744;
 }
 
 .mb-sm {
@@ -94,6 +103,39 @@ body {
   box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.35);
   color: #ff00d6;
   transform: translateY(1px);
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 1px solid #3ba3ff;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 5rem;
+  font-family: inherit;
+  font-size: 2.4rem;
+  color: #3ba3ff;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.btn-secondary:hover {
+  background-color: #3ba3ff;
+  color: #fff;
+  box-shadow: 0 1rem 2.5rem 1rem rgba(59, 163, 255, 0.2);
+}
+
+.children {
+  display: flex;
+}
+.children__img {
+  display: block;
+  width: 100%;
+  object-fit: cover !important;
+}
+.children__card {
+  display: grid;
+  grid-template-rows: 209px 1fr;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 .explanation {
@@ -361,7 +403,12 @@ body {
 .main {
   display: grid;
   grid-auto-rows: min-content;
-  row-gap: 4rem;
+  row-gap: 10rem;
+}
+
+.section-modules-for-children {
+  padding: 12rem 0;
+  background: #e9ebf7;
 }
 
 /*# sourceMappingURL=style.css.map */

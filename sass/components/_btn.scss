@@ -22,3 +22,25 @@
         transform: translateY(1px);
     }
 }
+
+.btn-secondary {
+    display: inline-block;
+    border: 1px solid $color-blue-2;
+    background-color: $color-white;
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+
+    font-family: inherit;
+    font-size: 2.4rem;
+    color: $color-blue-2;
+
+    cursor: pointer;
+
+    transition: 0.4s all;
+
+    &:hover {
+        background-color: $color-blue-2;
+        color: $color-white;
+        box-shadow: 0 1rem 2.5rem 1rem rgba($color-blue-2, 0.2);
+    }
+}

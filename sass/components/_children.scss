@@ -1,0 +1,16 @@
+.children {
+    display: flex;
+
+    &__img {
+        display: block;
+        width: 100%;
+        object-fit: cover !important;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-rows: 209px 1fr;
+        column-gap: 2rem;
+        row-gap: 1.5rem;
+    }
+}
