@@ -3,13 +3,14 @@
 
     &__img {
         display: block;
-        width: 100%;
+        width: 350px;
+        height: 350px;
         object-fit: cover !important;
     }
 
     &__card {
-        display: grid;
-        grid-template-rows: 209px 1fr;
+        display: flex;
+        flex-flow: column;
         column-gap: 2rem;
         row-gap: 1.5rem;
     }
